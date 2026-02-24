@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "This is a personal JSON Resume project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentons7/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/brentons7/resume/issues"
+  },
+  "homepage": "https://github.com/brentons7/resume#readme",
+  "devDependencies": {
+    "resume-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "jsonresume-theme-straightforward": "^0.2.0"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Brenton Stevenson",
+    "label": "Software Engineering Undergraduate Student",
+    "image": "",
+    "email": "brenton.stevenson10@yahoo.com",
+    "phone": "863 220 6261",
+    "url": "",
+    "summary": "",
+    "location": {
+      "address": "12101 FGCU Lake Pkwy E",
+      "postalCode": "FL 33965",
+      "city": "Fort Myers",
+      "countryCode": "US",
+      "region": "Florida"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Brenton Stevenson",
+        "url": "https://www.linkedin.com/in/brenton-stevenson-a21b66369"
+      },
+      {
+        "network": "GitHub",
+        "username": "brentons7",
+        "url": "https://github.com/brentons7"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "CMX Cinemas",
+      "location": "Lakeland, FL",
+      "position": "Team Member",
+      "startDate": "2022-06",
+      "endDate": "2022-09",
+      "highlights": [
+        "Team member and Customer Service role supporting theater operations."
+      ]
+    },
+    {
+      "name": "Plato's Closet",
+      "location": "Lakeland, FL",
+      "position": "Sales Associate / Buyer / Keyholder",
+      "startDate": "2022-09",
+      "endDate": "2024-08",
+      "highlights": [
+        "Assisted customers, managed inventory, and completed managerial duties supporting store operations."
+      ]
+    },
+    {
+      "name": "Chartwells Campus Dining",
+      "location": "Fort Myers, FL",
+      "position": "Team Member",
+      "startDate": "2023-08",
+      "endDate": "",
+      "highlights": [
+        "Customer Service and food preparation roles while balancing academics and other responsibilities."
+      ]
+    },
+    {
+      "name": "FGCU Housing",
+      "location": "Fort Myers, FL",
+      "position": "Resident Assistant",
+      "startDate": "2024-08",
+      "endDate": "",
+      "highlights": [
+        "Leadership role fostering a welcoming and safe community in my residence halls."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Florida Gulf Coast University",
+      "url": "https://https://www.fgcu.edu/",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2023-08",
+      "endDate": "",
+      "score": "3.0",
+      "courses": [
+        "Operating Systems",
+        "Embedded Programming",
+        "Cloud Computing",
+        "Software Engineering Fundamentals",
+        "Computer Security",
+        "Intro to Data Engineering",
+        "Data Structures & Algorithms",
+        "Programming I & II"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming / Scripting",
+      "level": "Familiar",
+      "keywords": [
+        "Python",
+        "C++",
+        "Javascript",
+        "Shell scripting"
+      ]
+    },
+    {
+      "name": "Systems / Tools",
+      "level": "Proficient",
+      "keywords": [
+        "Linux",
+        "Git",
+        "SSH",
+        "Tailscale",
+        "PostgreSQL",
+        "Raspberry Pi"
+      ]
+    },
+    {
+      "name": "Concepts",
+      "level": "Familiar",
+      "keywords": [
+        "System design",
+        "Embedded systems",
+        "Cloud computing",
+        "Software Engineering Fundamentals",
+        "Cybersecurity",
+        "Data Engineering"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Systems and backend development"
+    },
+    {
+      "name": "Building and optimizing computers and systems"
+    },
+    {
+      "name": "Embedded systems & IoT"
+    },
+    {
+      "name": "Exploring system design, software architecture, and technical reasoning"
+    },
+    {
+      "name": "Developing personal tools & projects"
+    }
+  ],
+  "projects": [
+    {
+      "name": "FGCU EagleCyberNest Cybersecurity Research Lab",
+      "description": "Contributed to cybersecurity / IoT / Cloud research projects at FGCU.",
+      "highlights": [
+        "Participated in a Machine Learning-Based Digital Twin Framework for Post Disaster Assessment research",
+        "Co-proposing a new project: Machine Learning-Based Ransomware Detection and Mitigation for Medical IoT Communication Networks "
+      ]
+    },
+    {
+      "name": "Software Engineering Fundamentals - Digital Twin Platform",
+      "description": "Designed a functional protoype with mock data for a presentation",
+      "highlights": [
+        "Used PostgreSQL to import OpenStreetMap data, FastAPI to display road lines in a CesiumJS web viewer",
+        "Coordinated meetings and roles among team"
+      ]
+    },
+    {
+      "name": "Personal Music Library Automation Project",
+      "description": "Automating formatting, organization, and conversion of my own music library.",
+      "highlights": [
+        "Developing Python scripts to manage FLAC music library and transfer MP3 files to Raspberry Pi 5 for Plex Server",
+        "Utilizing SSH, Tailscale, and Git"
+      ]
+    },
+    {
+      "name": "Personal JSONResume",
+      "description": "Structuring a version-controlled resume using JSON Resume",
+      "highlights": [
+        "Practicing JSON data management and CLI usage",
+        "Generating PDF and web views"
+      ]
+    },
+    {
+      "name": "Personal Systems",
+      "description": "Building and optimizing personal computer systems",
+      "highlights": [
+        "Building a high-performance personal desktop dual booting Windows and Linux",
+        "Configuring a Raspberry Pi 5 as a home server for small applications"
+      ]
+    },
+    {
+      "name": "Embedded Systems Autonomous Robot Vehicle",
+      "description": "Collaborated on programming an embedded autonomous robot vehicle for a class project",
+      "highlights": [
+        "Wrote C++ methods for robot navigation functions",
+        "Analyzed logical failures post-testing to understand flaws"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
