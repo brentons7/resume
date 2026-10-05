@@ -18,7 +18,7 @@
             {{#if highlights.length}}
               {{#each highlights}}
                 {{!-- formatting is expecting resume.json highlights to not have end punctuation --}}
-                <span>{{.}}</span>.{{#unless @last}} {{/unless}}
+                <span>{{.}}</span>{{#unless @last}}; {{/unless}}
               {{/each}}
             {{/if}}
           </li>

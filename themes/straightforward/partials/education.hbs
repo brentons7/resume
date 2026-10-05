@@ -13,11 +13,11 @@
           {{#if startDate}}
             <span class='date'>
               {{#if startDate}}{{MONTH_YEAR startDate}}{{/if}} &mdash;
-              {{#if endDate}}{{MONTH_YEAR endDate}}{{else}}Present{{/if}}
+              {{#if endDate}}{{#if (IS_FUTURE endDate)}}Expected {{/if}}{{MONTH_YEAR endDate}}{{else}}Present{{/if}}
             </span>
           {{/if}}
           <div class=''>
-            {{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if score}}, GPA: {{score}}{{/if}}
+            {{#if studyType}}{{studyType}} in {{/if}}{{#if area}}{{area}}{{/if}}{{#if score}}, GPA: {{score}}{{/if}}
           </div>
         </div>
         {{#unless @last}}

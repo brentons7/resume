@@ -23,7 +23,7 @@
 
 /* when generating the resume as a website or as headless, this will keep a nice readable margin in place */
 #resume {
-  margin: 0.4in;
+  margin: 0.4in 0.4in 0;
 }
 
 /* use-case is when a user generates their resume as a website, saves their website as a PDF, and uses their browser to manage the margins during save */
@@ -72,6 +72,7 @@ a {
 #basics-right-content {
   text-align: right;
   font-size: 13px;
+  white-space: nowrap;
 }
 
 .basics .divider {
@@ -195,20 +196,20 @@ a {
                   </span>
                 </div>
                 <div>
+                  <span class='phone'>
+                    <a href="tel:863 220 6261">863 220 6261</a>
+                  </span>
+                </div>
+                <div>
                   <span class='address'>Fort Myers, Florida</span>
                 </div>
+                  <div>
+                    <span class='url'><a href='https://www.linkedin.com/in/brenton-stevenson-a21b66369'>linkedin.com/in/brenton-stevenson-a21b66369</a></span>
+                  </div>
+                  <div>
+                    <span class='url'><a href='https://github.com/brentons7'>github.com/brentons7</a></span>
+                  </div>
             </div>
-      
-              <div class='display-none'>
-                    <span class='url'>
-                      <a href='https://www.linkedin.com/in/brenton-stevenson-a21b66369'>https://www.linkedin.com/in/brenton-stevenson-a21b66369</a>
-                    </span>
-                    <span class='divider'>|</span>
-                    <span class='url'>
-                      <a href='https://github.com/brentons7'>https://github.com/brentons7</a>
-                    </span>
-                    
-              </div>
       
           </div>
         </div>
@@ -226,8 +227,8 @@ a {
                   <span class='title'>Programming / Scripting:</span>
                       <span>Python</span>, 
                       <span>C++</span>, 
-                      <span>Javascript</span>, 
-                      <span>Shell scripting</span>.
+                      <span>JavaScript</span>, 
+                      <span>Shell scripting</span>
                 </li>
                 <li>
                   <span class='title'>Systems / Tools:</span>
@@ -235,9 +236,16 @@ a {
                       <span>Git</span>, 
                       <span>SSH</span>, 
                       <span>Tailscale</span>, 
+                      <span>Docker</span>, 
                       <span>PostgreSQL</span>, 
                       <span>Raspberry Pi</span>, 
-                      <span>NVIDIA Jetson Nano</span>.
+                      <span>NVIDIA Jetson</span>
+                </li>
+                <li>
+                  <span class='title'>Frameworks / Libraries:</span>
+                      <span>FastAPI</span>, 
+                      <span>CesiumJS</span>, 
+                      <span>PyTorch</span>
                 </li>
                 <li>
                   <span class='title'>Concepts:</span>
@@ -245,10 +253,7 @@ a {
                       <span>Federated learning</span>, 
                       <span>System design</span>, 
                       <span>Embedded systems</span>, 
-                      <span>Cloud computing</span>, 
-                      <span>Software Engineering Fundamentals</span>, 
-                      <span>Cybersecurity</span>, 
-                      <span>Data Engineering</span>.
+                      <span>Data Engineering</span>
                 </li>
             </ul>
           </div>
@@ -264,27 +269,6 @@ a {
           <div class='section-content'>
               <div class='job-block'>
                 <div class='block-header'>
-                  <span class='organization'>Lee Health</span>
-                  <span class='title'>Virtual Health Intern</span>
-                  <span class='date'>
-                    <time datetime="2026-06">Jun 2026</time> &mdash;
-                    Present
-                  </span>
-                </div>
-      
-                <div class='display-none'>
-                    <span class='location'>Fort Myers, FL</span>
-                </div>
-      
-                  <ul class='highlights'>
-                      <li>Deploy and configure Caregility virtual care cameras for the Room of the Future initiative, coordinating handoff to construction and plant operations</li>
-                      <li>Cable-manage completed patient rooms and program in-room TVs for virtual care</li>
-                      <li>Troubleshoot telehealth carts and other virtual health equipment</li>
-                  </ul>
-                  <div class='separator'></div>
-              </div>
-              <div class='job-block'>
-                <div class='block-header'>
                   <span class='organization'>FGCU EagleCyberNest Lab</span>
                   <span class='title'>Undergraduate Research Assistant</span>
                   <span class='date'>
@@ -298,11 +282,30 @@ a {
                 </div>
       
                   <ul class='highlights'>
-                      <li>Led experimental work for an edge-based federated learning study on patient physiological diagnostic monitoring, accepted to the Edge Intelligence Workshop at IEEE SEC 2026</li>
-                      <li>Configured Raspberry Pi 5 and NVIDIA Jetson Nano edge nodes, including hardware setup, SSH access, and software environment</li>
-                      <li>Benchmarked and tuned models, produced results tables, and co-wrote the paper</li>
-                      <li>Developing a Mamba-3-based intrusion detection system for healthcare IoMT networks, continuing earlier work on ML-based ransomware detection</li>
-                      <li>Contributed to research on an ML-based digital twin framework for post-disaster assessment</li>
+                      <li>Led experiments for an edge-based federated learning study on EKG anomaly detection and co-wrote the resulting paper, accepted to an IEEE SEC 2026 workshop</li>
+                      <li>Set up a Raspberry Pi 5 and NVIDIA Jetson Orin Nano edge testbed for on-device model training</li>
+                      <li>Developing a Mamba-3-based intrusion detection system for healthcare IoMT networks, building on earlier ML-based ransomware detection work</li>
+                  </ul>
+                  <div class='separator'></div>
+              </div>
+              <div class='job-block'>
+                <div class='block-header'>
+                  <span class='organization'>Lee Health</span>
+                  <span class='title'>Virtual Health Intern</span>
+                  <span class='date'>
+                    <time datetime="2026-06">Jun 2026</time> &mdash;
+                    Present
+                  </span>
+                </div>
+      
+                <div class='display-none'>
+                    <span class='location'>Fort Myers, FL</span>
+                </div>
+      
+                  <ul class='highlights'>
+                      <li>Deploy and configure Caregility virtual care cameras across patient rooms for the Room of the Future initiative, coordinating handoff to construction and plant operations</li>
+                      <li>Cable-manage completed patient rooms and program in-room TVs for virtual care</li>
+                      <li>Troubleshoot telehealth carts and other virtual health equipment</li>
                   </ul>
                   <div class='separator'></div>
               </div>
@@ -321,7 +324,7 @@ a {
                 </div>
       
                   <ul class='highlights'>
-                      <li>Fostered a welcoming and safe community as a leader in campus residence halls.</li>
+                      <li>Fostered a welcoming and safe community as a leader in campus residence halls</li>
                   </ul>
                   <div class='separator'></div>
               </div>
@@ -330,7 +333,7 @@ a {
                   <span class='organization'>Plato&#x27;s Closet</span>
                   <span class='title'>Sales Associate / Buyer / Keyholder</span>
                   <span class='date'>
-                    <time datetime="2022-09">Sep 2022</time> &mdash;
+                    <time datetime="2021-09">Sep 2021</time> &mdash;
                     <time datetime="2024-08">Aug 2024</time>
                   </span>
                 </div>
@@ -340,9 +343,26 @@ a {
                 </div>
       
                   <ul class='highlights'>
-                      <li>Assisted customers, managed inventory, and completed managerial duties supporting store operations.</li>
+                      <li>Assisted customers, managed inventory, and completed managerial duties supporting store operations</li>
                   </ul>
               </div>
+          </div>
+        </div>
+        <div class='section-line'></div>
+        <div id='publications' class='section-block'>
+          <div class='section-intro'>
+            <div class='section-name'>
+              <span>PUBLICATIONS</span>
+            </div>
+            <div class='section-intro-line'></div>
+          </div>
+          <div class='section-content'>
+              <div class='block-header'>
+                <span class='title'>Edge-Native Federated Time-Series Anomaly Detection for Resource-Constrained IoMT</span>
+              </div>
+                <ul class='highlights'>
+                    <li>Edge Intelligence Workshop at IEEE SEC 2026 (accepted, to appear Oct 2026)</li>
+                </ul>
           </div>
         </div>
         <div class='section-line'></div>
@@ -356,29 +376,18 @@ a {
           <div class='section-content'>
             <ul class='highlights'>
                 <li>
-                    <span class='title'>Software Engineering Fundamentals - Digital Twin Platform: </span>
-                      <span>Used PostgreSQL to import OpenStreetMap data, FastAPI to display road lines in a CesiumJS web viewer</span>. 
-                      <span>Coordinated meetings and roles among team</span>.
+                    <span class='title'>Edge-Based Federated Learning for EKG Anomaly Detection: </span>
+                      <span>Trained and benchmarked anomaly detection models on the MIT-BIH Arrhythmia dataset</span>; 
+                      <span>soldered header pins for AD8232 ECG, ADS1115 ADC, and MAX30102 pulse oximetry sensors on a Raspberry Pi 5 client</span>; 
+                      <span>ran federated training across Raspberry Pi 5 and NVIDIA Jetson Orin Nano nodes (Python, PyTorch)</span>
                 </li>
                 <li>
-                    <span class='title'>Personal Music Library Automation Project: </span>
-                      <span>Developing Python scripts to manage FLAC music library and transfer MP3 files to Raspberry Pi 5 for Plex Server</span>. 
-                      <span>Utilizing SSH, Tailscale, and Git</span>.
+                    <span class='title'>Class Projects: </span>
+                      <span>Led a team building a digital twin prototype for road infrastructure (PostgreSQL, FastAPI, CesiumJS, OpenStreetMap data); autonomous robot vehicle (C++ navigation); SRS Document for Healthcare Appointment Booking System (Requirements, Jira, User Stories, SCRUM, UML)</span>
                 </li>
                 <li>
-                    <span class='title'>Personal JSONResume: </span>
-                      <span>Practicing JSON data management and CLI usage</span>. 
-                      <span>Generating PDF and web views</span>.
-                </li>
-                <li>
-                    <span class='title'>Personal Systems: </span>
-                      <span>Building a high-performance personal desktop dual booting Windows and Linux</span>. 
-                      <span>Configuring a Raspberry Pi 5 as a home server for small applications</span>.
-                </li>
-                <li>
-                    <span class='title'>Embedded Systems Autonomous Robot Vehicle: </span>
-                      <span>Wrote C++ methods for robot navigation functions</span>. 
-                      <span>Analyzed logical failures post-testing to understand flaws</span>.
+                    <span class='title'>Homelab: </span>
+                      <span>Built a server PC running Plex and Docker; configured a Raspberry Pi 5 as a Moonlight game-streaming client; remote access via Tailscale</span>
                 </li>
             </ul>
           </div>
@@ -396,10 +405,10 @@ a {
                 <span class='title'>Florida Gulf Coast University</span>
                   <span class='date'>
                     Aug 2023 &mdash;
-                    Present
+                    Expected May 2027
                   </span>
                 <div class=''>
-                  Bachelor  - Software Engineering, GPA: 3.1
+                  B.S. in Software Engineering, GPA: 3.1
                 </div>
               </div>
           </div>

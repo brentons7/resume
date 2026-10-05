@@ -15,10 +15,10 @@ fs.readdirSync(partialsDir)
     Handlebars.registerPartial(path.basename(filename, extname), template),
   )
 
-// Handlebars.registerHelper('STRIP_PROTOCOL', urlStr => {
-//   const result = urlStr.replace(/(^\w+:|^)\/\//, '');
-//   return result;
-// })
+Handlebars.registerHelper('STRIP_PROTOCOL', urlStr => {
+  const result = urlStr.replace(/(^\w+:|^)\/\/(www\.)?/, '');
+  return result;
+})
 
 Handlebars.registerHelper('MONTH_YEAR', dateString =>
   // https://dockyard.com/blog/2020/02/14/you-probably-don-t-need-moment-js-anymore
@@ -27,6 +27,11 @@ Handlebars.registerHelper('MONTH_YEAR', dateString =>
     month: 'short',
     year: 'numeric',
   })
+);
+
+Handlebars.registerHelper('IS_FUTURE', dateString =>
+  // used to label a not-yet-reached end date (e.g. graduation) as "Expected"
+  new Date(dateString + "T00:00:00") > new Date()
 );
 
 Handlebars.registerHelper('IF_DATES_HAVE_SAME_MONTH_AND_YEAR', function (arg1, arg2) {

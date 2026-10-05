@@ -30,29 +30,27 @@
   },
   "work": [
     {
-      "name": "Lee Health",
-      "location": "Fort Myers, FL",
-      "position": "Virtual Health Intern",
-      "startDate": "2026-06",
-      "endDate": "",
-      "highlights": [
-        "Deploy and configure Caregility virtual care cameras for the Room of the Future initiative, coordinating handoff to construction and plant operations",
-        "Cable-manage completed patient rooms and program in-room TVs for virtual care",
-        "Troubleshoot telehealth carts and other virtual health equipment"
-      ]
-    },
-    {
       "name": "FGCU EagleCyberNest Lab",
       "location": "Fort Myers, FL",
       "position": "Undergraduate Research Assistant",
       "startDate": "2025-08",
       "endDate": "",
       "highlights": [
-        "Led experimental work for an edge-based federated learning study on patient physiological diagnostic monitoring, accepted to the Edge Intelligence Workshop at IEEE SEC 2026",
-        "Configured Raspberry Pi 5 and NVIDIA Jetson Nano edge nodes, including hardware setup, SSH access, and software environment",
-        "Benchmarked and tuned models, produced results tables, and co-wrote the paper",
-        "Developing a Mamba-3-based intrusion detection system for healthcare IoMT networks, continuing earlier work on ML-based ransomware detection",
-        "Contributed to research on an ML-based digital twin framework for post-disaster assessment"
+        "Led experiments for an edge-based federated learning study on EKG anomaly detection and co-wrote the resulting paper, accepted to an IEEE SEC 2026 workshop",
+        "Set up a Raspberry Pi 5 and NVIDIA Jetson Orin Nano edge testbed for on-device model training",
+        "Developing a Mamba-3-based intrusion detection system for healthcare IoMT networks, building on earlier ML-based ransomware detection work"
+      ]
+    },
+    {
+      "name": "Lee Health",
+      "location": "Fort Myers, FL",
+      "position": "Virtual Health Intern",
+      "startDate": "2026-06",
+      "endDate": "",
+      "highlights": [
+        "Deploy and configure Caregility virtual care cameras across patient rooms for the Room of the Future initiative, coordinating handoff to construction and plant operations",
+        "Cable-manage completed patient rooms and program in-room TVs for virtual care",
+        "Troubleshoot telehealth carts and other virtual health equipment"
       ]
     },
     {
@@ -62,17 +60,17 @@
       "startDate": "2024-08",
       "endDate": "2026-06",
       "highlights": [
-        "Fostered a welcoming and safe community as a leader in campus residence halls."
+        "Fostered a welcoming and safe community as a leader in campus residence halls"
       ]
     },
     {
       "name": "Plato's Closet",
       "location": "Lakeland, FL",
       "position": "Sales Associate / Buyer / Keyholder",
-      "startDate": "2022-09",
+      "startDate": "2021-09",
       "endDate": "2024-08",
       "highlights": [
-        "Assisted customers, managed inventory, and completed managerial duties supporting store operations."
+        "Assisted customers, managed inventory, and completed managerial duties supporting store operations"
       ]
     }
   ],
@@ -81,9 +79,9 @@
       "institution": "Florida Gulf Coast University",
       "url": "https://www.fgcu.edu/",
       "area": "Software Engineering",
-      "studyType": "Bachelor",
+      "studyType": "B.S.",
       "startDate": "2023-08",
-      "endDate": "",
+      "endDate": "2027-05",
       "score": "3.1",
       "courses": [
         "Operating Systems",
@@ -104,7 +102,7 @@
       "keywords": [
         "Python",
         "C++",
-        "Javascript",
+        "JavaScript",
         "Shell scripting"
       ]
     },
@@ -116,9 +114,19 @@
         "Git",
         "SSH",
         "Tailscale",
+        "Docker",
         "PostgreSQL",
         "Raspberry Pi",
-        "NVIDIA Jetson Nano"
+        "NVIDIA Jetson"
+      ]
+    },
+    {
+      "name": "Frameworks / Libraries",
+      "level": "Familiar",
+      "keywords": [
+        "FastAPI",
+        "CesiumJS",
+        "PyTorch"
       ]
     },
     {
@@ -129,58 +137,45 @@
         "Federated learning",
         "System design",
         "Embedded systems",
-        "Cloud computing",
-        "Software Engineering Fundamentals",
-        "Cybersecurity",
         "Data Engineering"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Software Engineering Fundamentals - Digital Twin Platform",
-      "description": "Designed a functional prototype with mock data for a presentation",
+      "name": "Edge-Based Federated Learning for EKG Anomaly Detection",
       "highlights": [
-        "Used PostgreSQL to import OpenStreetMap data, FastAPI to display road lines in a CesiumJS web viewer",
-        "Coordinated meetings and roles among team"
+        "Trained and benchmarked anomaly detection models on the MIT-BIH Arrhythmia dataset",
+        "soldered header pins for AD8232 ECG, ADS1115 ADC, and MAX30102 pulse oximetry sensors on a Raspberry Pi 5 client",
+        "ran federated training across Raspberry Pi 5 and NVIDIA Jetson Orin Nano nodes (Python, PyTorch)"
       ]
     },
     {
-      "name": "Personal Music Library Automation Project",
-      "description": "Automating formatting, organization, and conversion of my own music library.",
+      "name": "Class Projects",
       "highlights": [
-        "Developing Python scripts to manage FLAC music library and transfer MP3 files to Raspberry Pi 5 for Plex Server",
-        "Utilizing SSH, Tailscale, and Git"
+        "Led a team building a digital twin prototype for road infrastructure (PostgreSQL, FastAPI, CesiumJS, OpenStreetMap data); autonomous robot vehicle (C++ navigation); SRS Document for Healthcare Appointment Booking System (Requirements, Jira, User Stories, SCRUM, UML)"
       ]
     },
     {
-      "name": "Personal JSONResume",
-      "description": "Structuring a version-controlled resume using JSON Resume",
+      "name": "Homelab",
       "highlights": [
-        "Practicing JSON data management and CLI usage",
-        "Generating PDF and web views"
+        "Built a server PC running Plex and Docker; configured a Raspberry Pi 5 as a Moonlight game-streaming client; remote access via Tailscale"
       ]
-    },
+    }
+  ],
+  "publications": [
     {
-      "name": "Personal Systems",
-      "description": "Building and optimizing personal computer systems",
+      "name": "Edge-Native Federated Time-Series Anomaly Detection for Resource-Constrained IoMT",
+      "publisher": "Edge Intelligence Workshop at IEEE SEC 2026",
+      "url": "",
       "highlights": [
-        "Building a high-performance personal desktop dual booting Windows and Linux",
-        "Configuring a Raspberry Pi 5 as a home server for small applications"
-      ]
-    },
-    {
-      "name": "Embedded Systems Autonomous Robot Vehicle",
-      "description": "Collaborated on programming an embedded autonomous robot vehicle for a class project",
-      "highlights": [
-        "Wrote C++ methods for robot navigation functions",
-        "Analyzed logical failures post-testing to understand flaws"
+        "Edge Intelligence Workshop at IEEE SEC 2026 (accepted, to appear Oct 2026)"
       ]
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-09-29T00:00:00"
+    "lastModified": "2026-10-05T00:00:00"
   }
 }
